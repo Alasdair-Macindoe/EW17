@@ -1,0 +1,45 @@
+#titleText {
+  padding-top: 0.5%;
+  width: 100%;
+  font-size: 1.5vw;
+  font-family: 'Advent Pro', sans-serif;
+  border-style: solid;
+  border-width: 0.25px;
+  color: black;
+  text-align: center;
+}
+
+.HorizontalBorder{
+  width: 100%;
+  height: 5%;
+  display: inline-flex;
+}
+
+.Section{
+  display: flex;
+  flex-direction: column;
+}
+.RightSection{
+  width: 20%;
+  float: right;
+}
+.LeftSection{
+  width: 10%;
+  float: left;
+  background-color: white;
+}
+
+.middleSection #title{
+  text-align: center;
+  padding-top: 1%;
+  font-size: 2vw;
+
+}
+.LeftSection #upperSection{
+  height: 90%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
