@@ -3,6 +3,7 @@ Created by Alasdair Macindoe.
 https://github.com/Alasdair-Macindoe
 For source code: https://github.com/Alasdair-Macindoe/EW17
 -->
+<html>
 <head>
   <title>Enterprise Week 2017</title>
   <link rel="stylesheet" type="text/css" href="reset.css">
@@ -12,23 +13,33 @@ For source code: https://github.com/Alasdair-Macindoe/EW17
   <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
 </head>
 <body>
-  <div class="HorizontalBorder" id="top">
-    <span id="titleText">Enterprise Week 2017</span>
-  </div>
-
-  <div class="Section RightSection">
-    <div class="Dates" id="monday"><span>Monday 11th Sept</span></div>
-    <div class="Dates" id="tuesday"><span>Tuesday 12th Sept</span></div>
-    <div class="Dates" id="wednesday"><span>Wednesday 13th Sept</span></div>
-    <div class="Dates" id="thursday"><span>Thursday 14th Sept</span></div>
-    <div class="Dates" id="friday"><span>Friday 15th Sept</span></div>
-    <div class="Dates" id="saturday"><span>Saturday 16th Sept</span></div>
-    <div class="Dates" id="team">
-      <span>
-        <img class="sideImage" src="img/team.jpeg"></img>
-        <span class="TextImage"> Team </span>
-      </span>
+  <!-- 'root' for VueJS -->
+  <div id="app">
+    <div class="HorizontalSection" id="top">
+      <span id="titleText">Enterprise Week 2017</span>
     </div>
-    <div class="Dates" id="archive"><span>Archive</span></div>
+
+    <div class="Section LeftSection" id="dateSection">
+      <date-box day="monday" date="Monday 11th Sept"></date-box>
+      <date-box day="tuesday" date="Tuesday 12th Sept"></date-box>
+      <date-box day="wednesday" date="Wednesday 13th Sept"></date-box>
+      <date-box day="thursday" date="Thursday 14th Sept"></date-box>
+      <date-box day="friday" date="Friday 15th Sept"></date-box>
+      <date-box day="saturday" date="Saturday 16th Sept"></date-box>
+      <div class="Dates" id="archive"><span>Archive</span></div>
+      <div class="Dates" id="team">
+        <span>
+          <img class="sideImage" src="img/team.jpeg"></img>
+          <span class="TextImage"> Team </span>
+        </span>
+      </div>
+    </div>
+    <div class="Section RightSection" id="textSection">
+      <span id="mainBody">Hello World!</span>
+    </div>
   </div>
+  <!-- end of Vue -->
+  <script src="https://unpkg.com/vue"></script>
+  <script src="dates.js"></script>
 </body>
+</html>

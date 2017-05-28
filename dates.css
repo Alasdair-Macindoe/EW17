@@ -1,26 +1,23 @@
 .Dates{
   color: black;
   height: 11.87%;
-  width: 100%;
   text-align: center;
   font-size: 1.2vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 50%;
   width: 50%;
   font-family: 'Advent Pro', sans-serif;
   border-style: solid;
 }
-
 
 .TextImage{
   color: white;
   font-size: 2vw;
   position: absolute;
   text-align: center;
-  left: 93%;
-  bottom: 16%;
+  left: 3%;
+  bottom: 4%;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -31,29 +28,29 @@
 }
 
 #monday{
-  background-color: rgba(251, 22, 22, 0.5);
+  background-color: rgba(251, 22, 22, 0.4);
 }
 
 #tuesday{
-  background-color: rgba(251, 137, 22, 0.5);
+  background-color: rgba(251, 137, 22, 0.4);
 }
 
 #wednesday{
-  background-color: rgba(251, 251, 22, 0.5);
+  background-color: rgba(251, 251, 22, 0.4);
 }
 
 #thursday{
-  background-color: rgba(137, 251, 22, 0.5);
+  background-color: rgba(137, 251, 22, 0.4);
 }
 
 #friday{
-  background-color: rgba(22, 251, 22, 0.5);
+  background-color: rgba(22, 251, 22, 0.4);
 }
 
 #saturday{
-  background-color: rgba(22, 251, 137, 0.5);
+  background-color: rgba(22, 251, 137, 0.4);
 }
 
 #archive{
-  background-color: rgba(33, 33, 33, 0.5);
+  background-color: rgba(161, 162, 157, 0.4);
 }
