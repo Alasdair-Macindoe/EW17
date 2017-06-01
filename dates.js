@@ -3,8 +3,10 @@ function changeBarColours(colour){
   //Set the horizontal and vertical bar to this colour
   topText = document.getElementById('titleText').style;
   topText.setProperty('color', colour);
+  topText.setProperty('opacity', '1');
   vertBar = document.getElementById('textSection').style;
   vertBar.setProperty('border-color', colour);
+  vertBar.setProperty('opacity', '1');
 }
 
 Vue.component('date-box', {
