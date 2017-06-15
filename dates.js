@@ -1,5 +1,4 @@
 function changeBarColours(colour){
-  console.log(colour);
   //Set the horizontal and vertical bar to this colour
   topText = document.getElementById('titleText').style;
   topText.setProperty('color', colour);

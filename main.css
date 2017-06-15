@@ -20,12 +20,12 @@
   flex-direction: column;
 }
 .RightSection{
-  width: 79.94%;
   height: 95%;
+  width: 79.9%;
   border-style: solid;
   border-color: rgba(0, 0, 0, 1); /* 0, 0, 0 = black */
   border-left-width: 1px;
-  float: right;
+  float: left;
 }
 .LeftSection{
   width: 20%;
