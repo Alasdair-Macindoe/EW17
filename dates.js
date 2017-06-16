@@ -8,28 +8,35 @@ function changeBarColours(colour){
   vertBar.setProperty('opacity', '1');
 }
 
+function getColour(event){
+  //Find whatever was just moused over
+  divCSS = event.currentTarget;
+  //Find the colour it is in the CSS
+  style = window.getComputedStyle(divCSS);
+  divColour = style.getPropertyValue('background-color');
+  return divColour;
+}
+
 Vue.component('date-box', {
   props: ['date', 'day'],
   template: '<div class=\"dates\" v-on:mouseleave=\"dateMouseleave\" \
-        v-on:mouseover=\"dateMouseover\" :id="day">{{ date }}</div>',
+        v-on:mouseover=\"dateMouseover\" \
+        v-on:click=\"onclick\" :id="day">{{ date }}</div>',
   methods: {
     dateMouseover: function(event){
-      //Find whatever was just moused over
-      divCSS = event.currentTarget;
-      //Find the colour it is in the CSS
-      style = window.getComputedStyle(divCSS);
-      divColour = style.getPropertyValue('background-color');
+      divColour = getColour(event);
       changeBarColours(divColour);
       divCSS = divCSS.style.setProperty('width', '100%');
-      //Update line colour
-      createLines(divColour);
     },
     dateMouseleave: function(event){
       changeBarColours('rgba(0, 0, 0, 1)');
       divCSS = event.currentTarget.style;
       divCSS.setProperty('width', '50%');
-      //Update line colour
-      createLines(defaultLineColour);
+    },
+    onclick: function(event){
+      updateLines(getColour(event));
+      //adjust opacity from default
+      document.getElementById('navbarCanvas').style.setProperty('opacity', '0.6');
     }
   }
 })
