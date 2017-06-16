@@ -1,5 +1,5 @@
 #titleText {
-  padding-top: 0.5%;
+  padding-top: 0.4%;
   width: 100%;
   font-size: 1.5vw;
   font-family: 'Advent Pro', sans-serif;
@@ -30,4 +30,10 @@
 .LeftSection{
   width: 20%;
   float: left;
+}
+
+#navbarCanvas{
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
 }

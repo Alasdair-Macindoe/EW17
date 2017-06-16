@@ -21,11 +21,15 @@ Vue.component('date-box', {
       divColour = style.getPropertyValue('background-color');
       changeBarColours(divColour);
       divCSS = divCSS.style.setProperty('width', '100%');
+      //Update line colour
+      createLines(divColour);
     },
     dateMouseleave: function(event){
       changeBarColours('rgba(0, 0, 0, 1)');
       divCSS = event.currentTarget.style;
       divCSS.setProperty('width', '50%');
+      //Update line colour
+      createLines(defaultLineColour);
     }
   }
 })
