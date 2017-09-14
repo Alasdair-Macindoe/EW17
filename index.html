@@ -15,12 +15,12 @@ For source code: https://github.com/Alasdair-Macindoe/EW17
 <body>
   <!-- 'root' for VueJS -->
   <div id="app">
-    <div class="HorizontalSection" id="top">
-      <canvas id="navbarCanvas"></canvas>
-      <span id="titleText">Enterprise Week 2017</span>
-    </div>
 
     <div class="Section LeftSection" id="dateSection">
+      <div class="HorizontalSection" id="top">
+        <canvas id="navbarCanvas"></canvas>
+        <span id="titleText" class="font">Enterprise Week 2017</span>
+      </div>
       <date-box day="monday" date="Monday 11th Sept"></date-box>
       <date-box day="tuesday" date="Tuesday 12th Sept"></date-box>
       <date-box day="wednesday" date="Wednesday 13th Sept"></date-box>
@@ -35,12 +35,107 @@ For source code: https://github.com/Alasdair-Macindoe/EW17
         </span>
       </div>
     </div>
+
     <div class="RightSection" id="textSection">
+      <canvas id="logoCanvas"></canvas>
+      <div class="Entries">
+        <div class="entriesRow1">
+          <!-- Monday Events -->
+          <event-box day="monday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+          <event-box day="monday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+          <!-- Tuesday Events -->
+          <event-box day="tuesday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+          <event-box day="tuesday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+        </div>
+        <div class="entriesRow2">
+          <event-box day="tuesday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+          <!-- Wednesday Events -->
+          <event-box day="wednesday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+          <event-box day="wednesday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+          <!-- Thursday -->
+          <event-box day="thursday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+        </div>
+        <div class="entriesRow3">
+          <event-box day="thursday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+        </div>
+        <div class="entriesRow4">
+          <!-- Friday -->
+          <event-box day="friday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+          <event-box day="friday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+        </div>
+        <div class="entriesRow5">
+          <event-box day="saturday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+          <event-box day="saturday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+          <event-box day="saturday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+          <event-box day="saturday"
+                name="Example Name" title="Example Title"
+                desc="Hello World. This is a description."
+                img="img/person.png" loc="Union/Address">
+          </event-box>
+        </div>
+      </div>
     </div>
   </div>
   <!-- end of Vue -->
   <script src="https://unpkg.com/vue"></script>
   <script src="dates.js"></script>
+  <script src="logo.js"></script>
   <script src="canvas.js"></script>
 </body>
 </html>

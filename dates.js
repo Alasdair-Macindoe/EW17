@@ -21,7 +21,7 @@ Vue.component('date-box', {
   props: ['date', 'day'],
   template: '<div class=\"dates\" v-on:mouseleave=\"dateMouseleave\" \
         v-on:mouseover=\"dateMouseover\" \
-        v-on:click=\"onclick\" :id="day">{{ date }}</div>',
+        v-on:click=\"onclick\" :class="day">{{ date }}</div>',
   methods: {
     dateMouseover: function(event){
       divColour = getColour(event);
@@ -40,6 +40,25 @@ Vue.component('date-box', {
     }
   }
 })
+
+Vue.component('event-box', {
+  props: ['day', 'name', 'title', 'desc', 'img', 'loc'],
+  template: '<div class="entry" :class="day"> \
+    <div class="name boxText font"> {{name}} </div>\
+    <div class="title boxText font"> {{title}} </div>\
+    <div class="mainBoxArea">\
+      <div class="boxTextArea boxText">\
+        {{desc}}\
+      </div>\
+      <div class="boxPhotoArea">\
+        <img class="boxPhotograph" :src="img"></img>\
+      </div>\
+    </div>\
+    <div class="address boxText font">\
+      <span class="addressText"> {{loc}} </span>\
+    </div>\
+  </div>'
+});
 
 var vm = new Vue({
   el: '#app',

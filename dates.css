@@ -27,30 +27,30 @@
   opacity: 0.9;
 }
 
-#monday{
+.monday{
   background-color: rgba(251, 22, 22, 0.4);
 }
 
-#tuesday{
+.tuesday{
   background-color: rgba(251, 137, 22, 0.4);
 }
 
-#wednesday{
+.wednesday{
   background-color: rgba(251, 251, 22, 0.4);
 }
 
-#thursday{
+.thursday{
   background-color: rgba(137, 251, 22, 0.4);
 }
 
-#friday{
+.friday{
   background-color: rgba(22, 251, 22, 0.4);
 }
 
-#saturday{
+.saturday{
   background-color: rgba(22, 251, 137, 0.4);
 }
 
-#archive{
+.archive{
   background-color: rgba(161, 162, 157, 0.4);
 }
