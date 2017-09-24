@@ -25,8 +25,9 @@ Vue.component('date-box', {
   methods: {
     dateMouseover: function(event){
       divColour = getColour(event);
+      divCSS = event.currentTarget;
       changeBarColours(divColour);
-      divCSS = divCSS.style.setProperty('width', '100%');
+      divCSS.style.setProperty('width', '100%');
     },
     dateMouseleave: function(event){
       changeBarColours('rgba(0, 0, 0, 1)');
