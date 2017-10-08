@@ -17,6 +17,13 @@
   vertical-align: middle;
   bottom: 10%;
   left: 3%;
+  display: inline-block;
+}
+
+#sponsorText{
+  text-align: center;
+  padding-bottom: 10px;
+  display: block;
 }
 
 .HorizontalSection{
@@ -43,6 +50,7 @@
 }
 
 .LeftSection{
+  min-width: 17%;
   max-width: 20%;
   float: left;
 }
@@ -123,4 +131,8 @@
   float: right;
   width: 33%;
   height: 10%;
+}
+
+#sponsorLogo{
+  width: 8vw;
 }
