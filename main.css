@@ -32,7 +32,7 @@
 
 .RightSection{
   height: 100%;
-  width: 79.95%;
+  max-width: 79.95%;
   border-style: solid;
   border-color: rgba(0, 0, 0, 1); /* 0, 0, 0 = black */
   border-left-width: 1px;
@@ -43,7 +43,7 @@
 }
 
 .LeftSection{
-  width: 20%;
+  max-width: 20%;
   float: left;
 }
 
