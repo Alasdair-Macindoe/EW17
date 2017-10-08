@@ -43,19 +43,20 @@ Vue.component('date-box', {
 })
 
 Vue.component('event-box', {
-  props: ['day', 'name', 'title', 'desc', 'img', 'loc'],
+  props: ['day', 'name', 'title', 'desc', 'img', 'loc', 'link', 'web'],
   template: '<div class="entry" :class="day"> \
-    <div class="name boxText font"> {{name}} </div>\
-    <div class="title boxText font"> {{title}} </div>\
+    <div class="name font"> {{name}} </div>\
+    <div class="title font"> {{title}} </div>\
     <div class="mainBoxArea">\
-      <div class="boxTextArea boxText">\
+      <div class="boxTextArea">\
         {{desc}}\
+        Join the event on <a :href="link"> {{web}}</a>!\
       </div>\
       <div class="boxPhotoArea">\
         <img class="boxPhotograph" :src="img"></img>\
       </div>\
     </div>\
-    <div class="address boxText font">\
+    <div class="address font">\
       <span class="addressText"> {{loc}} </span>\
     </div>\
   </div>'

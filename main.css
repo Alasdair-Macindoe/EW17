@@ -11,6 +11,14 @@
   z-index: 1;
 }
 
+#sponsor{
+  position: absolute;
+  font-size: 1vw;
+  vertical-align: middle;
+  bottom: 10%;
+  left: 3%;
+}
+
 .HorizontalSection{
   display: flex;
   height: 5%;
@@ -24,10 +32,13 @@
 
 .RightSection{
   height: 100%;
-  width: 79.9%;
+  width: 79.95%;
   border-style: solid;
   border-color: rgba(0, 0, 0, 1); /* 0, 0, 0 = black */
   border-left-width: 1px;
+  display: flex;
+  flex-grow: column;
+  flex-wrap: wrap;
   float: left;
 }
 
@@ -37,8 +48,9 @@
 }
 
 .entry{
-  height: 20%;
-  opacity: 0.8;
+  max-width: 33%;
+  min-height: 25%;
+  max-height: 25%;
 }
 
 .boxText{
@@ -59,15 +71,15 @@
 .mainBoxArea{
   display: inline-flex;
   flex-direction: row;
-  height: 65%;
+  width: 100%;
 }
 
 .boxTextArea{
-  width: 60%;
+  width: 75%;
 }
 
 .boxPhotoArea{
-  width: 40%;
+  width: 25%;
 }
 
 .address{
@@ -98,6 +110,17 @@
   z-index: -1;
 }
 
-.Entries{
-  display: inline-flex;
+#bottomLogo{
+  max-height: 25%;
+  max-width: 33%;
+}
+
+#endMsg{
+  position: relative;
+  font-size: 2vw;
+  top: 10%;
+  left: 10%;
+  float: right;
+  width: 33%;
+  height: 10%;
 }
