@@ -16,7 +16,7 @@
   font-size: 1vw;
   vertical-align: middle;
   bottom: 10%;
-  left: 3%;
+  left: 1%;
   display: inline-block;
 }
 
@@ -119,7 +119,7 @@
 
 #bottomLogo{
   max-height: 25%;
-  max-width: 33%;
+  max-width: 25%;
 }
 
 #endMsg{
@@ -134,4 +134,10 @@
 
 #sponsorLogo{
   width: 8vw;
+}
+
+#santanderLogo {
+  width: 9vw;
+  height: 4vw;
+  margin-left: 2px;
 }
